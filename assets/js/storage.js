@@ -1,0 +1,19 @@
+// Safe wrappers around localStorage. Everything stays on this device.
+// Only three things are ever stored: quiz result, streak, recently viewed (+ pledge ticks).
+const PREFIX = 'sanskriti:';
+export const KEYS = ['quiz', 'streak', 'recent', 'pledges', 'lastSurprise'];
+
+export function load(key, fallback = null) {
+  try {
+    const raw = window.localStorage.getItem(PREFIX + key);
+    return raw === null ? fallback : JSON.parse(raw);
+  } catch { return fallback; }
+}
+export function save(key, value) {
+  try { window.localStorage.setItem(PREFIX + key, JSON.stringify(value)); return true; }
+  catch { return false; }
+}
+export function remove(key) {
+  try { window.localStorage.removeItem(PREFIX + key); } catch { /* ignore */ }
+}
+export function clearAll() { KEYS.forEach(remove); }
