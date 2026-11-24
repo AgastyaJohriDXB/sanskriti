@@ -160,3 +160,4 @@ input[type=text],select{font:inherit;width:100%;min-height:48px;padding:.6rem .8
 .btn-row.center{justify-content:center}
 @media (prefers-reduced-motion:no-preference){.js .reveal{transform:translateY(14px);transition:transform .5s ease}.js .reveal.in{transform:none}}
 @media (min-width:900px){.filters{grid-template-columns:1.4fr 1fr auto}}
+@media (max-width:420px){.brand-name{letter-spacing:.12em;font-size:1rem}.brand svg{width:32px;height:32px}}
