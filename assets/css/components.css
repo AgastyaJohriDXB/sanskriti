@@ -70,7 +70,7 @@
 .band-solutions::after{background:linear-gradient(#C49A24 0 4px,#176B50 4px 10px,#C49A24 10px)}
 .band-about{background:var(--band-teal)}
 .band-about::after{background:radial-gradient(circle,#FFF3D6 2px,transparent 3px) 0 0/16px 14px}
-.band-explore{background:var(--north-blue)}
+.band-explore{background:#1D4A78}
 .band-explore::after{background:repeating-linear-gradient(90deg,#E8A52A 0 12px,#245A91 12px 18px)}
 .breadcrumb ol{list-style:none;display:flex;flex-wrap:wrap;gap:.4rem;padding:0;margin:0 0 1.25rem;font-size:.9rem}
 .breadcrumb li+li::before{content:"/";margin-right:.4rem;opacity:.8}

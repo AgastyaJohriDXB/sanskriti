@@ -11,7 +11,7 @@
   /* Southern palette */
   --south-green:#176B50; --south-gold:#C49A24; --south-maroon:#7D263A; --south-ivory:#FFF3D6;
   /* Accessible text variants (decorative originals above are kept for fills/borders) */
-  --south-gold-text:#8A6A10;      /* gold as text on light backgrounds */
+  --south-gold-text:#7A5C0C;      /* gold as text on light backgrounds */
   --north-saffron-text:#8F5A00;   /* saffron as text on light backgrounds */
   --south-green-deep:#0F4A37;     /* hero / footer background, so gold text passes */
   /* Themed bands */
