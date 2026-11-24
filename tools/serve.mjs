@@ -9,7 +9,8 @@ const types = { '.html': 'text/html; charset=utf-8', '.css': 'text/css', '.js': 
 export function serve(port = 4173) {
   const server = createServer(async (req, res) => {
     let path = decodeURIComponent(new URL(req.url, 'http://x').pathname);
-    if (!path.startsWith('/sanskriti/')) { res.writeHead(302, { location: '/sanskriti/' }); return res.end(); }
+    if (path === '/sanskriti') { res.writeHead(301, { location: '/sanskriti/' }); return res.end(); }
+    if (!path.startsWith('/sanskriti/')) { res.writeHead(404, { 'content-type': 'text/plain' }); return res.end('Not found'); }
     path = path.slice('/sanskriti/'.length) || 'index.html';
     if (path.endsWith('/')) path += 'index.html';
     const file = normalize(join(root, path));

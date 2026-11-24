@@ -158,11 +158,11 @@ for (const [file, p] of Object.entries(PAGES)) {
   html = stamp(html, 'skills-noscript', skillNoscript());
   writeFileSync(new URL(file, root), html);
 }
-// sitemap
+// robots.txt + sitemap
+writeFileSync(new URL('robots.txt', root), `User-agent: *\nAllow: /\n${cfg.siteUrl ? `Sitemap: ${cfg.siteUrl}sitemap.xml\n` : ''}`);
 if (cfg.siteUrl) {
   const urls = Object.entries(PAGES).filter(([, p]) => !p.noindex && p.key !== 'skill').map(([f]) => cfg.siteUrl + (f === 'index.html' ? '' : f));
   writeFileSync(new URL('sitemap.xml', root), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map(u => `  <url><loc>${u}</loc></url>`).join('\n')}\n</urlset>\n`);
-  writeFileSync(new URL('robots.txt', root), `User-agent: *\nAllow: /\nSitemap: ${cfg.siteUrl}sitemap.xml\n`);
 }
 console.log('Stamped', Object.keys(PAGES).length, 'pages');
 // Concatenate the readable CSS source files into one stylesheet (one request, no @import chain).

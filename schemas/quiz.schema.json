@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["reasons", "questions"],
+  "properties": {
+    "reasons": {"type": "object", "additionalProperties": {"type": "string"}},
+    "questions": {"type": "array", "minItems": 6, "items": {"type": "object", "required": ["q", "options"],
+      "properties": {"options": {"type": "array", "minItems": 2, "items": {"type": "object", "required": ["label", "traits"]}}}}}
+  }
+}

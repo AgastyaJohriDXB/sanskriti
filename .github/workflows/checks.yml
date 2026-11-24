@@ -1,0 +1,54 @@
+name: checks
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: HTML validation
+        run: npx -y html-validate@9 *.html
+      - name: JSON schema check of data files
+        run: |
+          npx -y ajv-cli@5 validate --spec=draft2020 -s schemas/skills.schema.json -d data/skills.json
+          npx -y ajv-cli@5 validate --spec=draft2020 -s schemas/experiences.schema.json -d data/experiences.json
+          npx -y ajv-cli@5 validate --spec=draft2020 -s schemas/quiz.schema.json -d data/quiz.json
+      - name: Colour contrast (WCAG AA)
+        run: node tools/contrast-check.mjs
+      - name: Unit tests
+        run: node --test tests/unit.test.mjs
+      - name: Internal links (must pass)
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: --offline --no-progress --root-dir "${{ github.workspace }}" './*.html'
+          fail: true
+      - name: External links (warn only)
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: --no-progress --max-retries 2 --accept 200,403,429 './*.html' 'data/*.json'
+          fail: false
+  lighthouse:
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Lighthouse CI (non-blocking)
+        run: |
+          (node tools/serve.mjs &) && sleep 2
+          npx -y @lhci/cli@0.14 collect --url=http://127.0.0.1:4173/sanskriti/index.html --url=http://127.0.0.1:4173/sanskriti/quiz.html --numberOfRuns=1
+          npx -y @lhci/cli@0.14 upload --target=temporary-public-storage || true
+      - uses: actions/upload-artifact@v4
+        with:
+          name: lighthouse-report
+          path: .lighthouseci

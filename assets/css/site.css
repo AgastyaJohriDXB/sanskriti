@@ -2,7 +2,7 @@
 /* ==== tokens.css ==== */
 /* Sanskriti design tokens. Palette hex values come from the project specification. */
 @font-face{font-family:"Cormorant Garamond";font-style:normal;font-weight:600;font-display:swap;src:url("../fonts/cormorant-garamond-latin-600-normal.woff2") format("woff2")}
-@font-face{font-family:"Cormorant Garamond";font-style:italic;font-weight:600;font-display:swap;src:url("../fonts/cormorant-garamond-latin-600-italic.woff2") format("woff2")}
+@font-face{font-family:"Cormorant Garamond";font-style:italic;font-weight:600;font-display:optional;src:url("../fonts/cormorant-garamond-latin-600-italic.woff2") format("woff2")}
 @font-face{font-family:"Inter";font-style:normal;font-weight:400;font-display:swap;src:url("../fonts/inter-latin-400-normal.woff2") format("woff2")}
 @font-face{font-family:"Inter";font-style:normal;font-weight:600;font-display:swap;src:url("../fonts/inter-latin-600-normal.woff2") format("woff2")}
 @font-face{font-family:"Inter";font-style:normal;font-weight:700;font-display:swap;src:url("../fonts/inter-latin-700-normal.woff2") format("woff2")}
@@ -275,3 +275,4 @@ input[type=text],select{font:inherit;width:100%;min-height:48px;padding:.6rem .8
 .pledges label{display:flex;gap:.8rem;align-items:flex-start;font-weight:600;padding:.6rem 0;min-height:44px;cursor:pointer}
 .pledges input{width:1.5rem;height:1.5rem;flex:none;margin-top:.15rem;accent-color:var(--south-green)}
 .notfound{min-height:60vh;display:grid;place-items:center;text-align:center}
+#skill{min-height:100vh}
