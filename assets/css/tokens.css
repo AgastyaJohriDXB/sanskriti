@@ -13,7 +13,8 @@
   /* Accessible text variants (decorative originals above are kept for fills/borders) */
   --south-gold-text:#7A5C0C;      /* gold as text on light backgrounds */
   --north-saffron-text:#8F5A00;   /* saffron as text on light backgrounds */
-  --south-green-deep:#0F4A37;     /* hero / footer background, so gold text passes */
+  --south-green-deep:#0F4A37;
+  --north-blue-deep:#1D4A78;      /* explore band background, so light-gold text passes */     /* hero / footer background, so gold text passes */
   /* Themed bands */
   --band-pink:#8E1F5A; --band-indigo:#22306B; --band-teal:#0B5B63;
   /* Neutrals */
