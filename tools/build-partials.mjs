@@ -132,9 +132,9 @@ const zoneName = z => ({ north: 'North', south: 'South', east: 'East', west: 'We
 const skillCards = () => `<!-- @skills-grid -->
 <ul class="grid" id="skill-grid">
 ${skills.map(s => `  <li data-skill-card data-category="${s.category}" data-zone="${s.zone}"><a class="skill-card" href="skill.html?id=${s.id}">
-    <span class="thumb"><img src="${s.image.src}" alt="" width="400" height="300" loading="lazy" decoding="async"></span>
-    <span class="body"><span class="tag">${esc(categories.find(c => c.id === s.category).name)}</span><span class="tag">${zoneName(s.zone)}</span>
-    <h3>${esc(s.name)}</h3><p>${esc(s.blurb)}</p></span></a></li>`).join('\n')}
+    <div class="thumb"><img src="${s.image.src}" alt="" width="400" height="300" loading="lazy" decoding="async"></div>
+    <div class="body"><span class="tag">${esc(categories.find(c => c.id === s.category).name)}</span><span class="tag">${zoneName(s.zone)}</span>
+    <h3>${esc(s.name)}</h3><p>${esc(s.blurb)}</p></div></a></li>`).join('\n')}
 </ul>
 <!-- /@skills-grid -->`;
 const skillNoscript = () => `<!-- @skills-noscript -->

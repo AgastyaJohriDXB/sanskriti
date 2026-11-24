@@ -68,74 +68,74 @@
   </section>
   <section class="reading" aria-label="Skills">
     <div class="container">
-      <form id="filters" class="filters" hidden aria-label="Filter skills">
+      <div id="filters" class="filters" role="group" aria-label="Filter skills" hidden>
         <fieldset class="chips"><legend>Category</legend><label class="chip"><input type="radio" name="category" value="all" checked><span>All</span></label><label class="chip"><input type="radio" name="category" value="arts"><span>Arts &amp; Painting</span></label><label class="chip"><input type="radio" name="category" value="crafts"><span>Pottery &amp; Crafts</span></label><label class="chip"><input type="radio" name="category" value="textiles"><span>Textiles &amp; Weaving</span></label><label class="chip"><input type="radio" name="category" value="music"><span>Traditional Music</span></label><label class="chip"><input type="radio" name="category" value="dance"><span>Dance</span></label><label class="chip"><input type="radio" name="category" value="food"><span>Traditional Food</span></label></fieldset>
         <fieldset class="chips"><legend>Region</legend><label class="chip"><input type="radio" name="zone" value="all" checked><span>All</span></label><label class="chip"><input type="radio" name="zone" value="north"><span>North</span></label><label class="chip"><input type="radio" name="zone" value="south"><span>South</span></label><label class="chip"><input type="radio" name="zone" value="east"><span>East</span></label><label class="chip"><input type="radio" name="zone" value="west"><span>West</span></label><label class="chip"><input type="radio" name="zone" value="central"><span>Central</span></label></fieldset>
         <div><button type="button" id="filter-reset" class="btn btn-secondary">Show all</button></div>
-      </form>
+      </div>
       <p id="filter-status" role="status" aria-live="polite"></p>
       <!-- @skills-grid -->
 <ul class="grid" id="skill-grid">
   <li data-skill-card data-category="arts" data-zone="east"><a class="skill-card" href="skill.html?id=madhubani">
-    <span class="thumb"><img src="assets/img/skills/madhubani.svg" alt="" width="400" height="300" loading="lazy" decoding="async"></span>
-    <span class="body"><span class="tag">Arts &amp; Painting</span><span class="tag">East</span>
-    <h3>Madhubani painting</h3><p>Bright paintings full of fish, birds, flowers and gods, filled edge to edge with fine lines.</p></span></a></li>
+    <div class="thumb"><img src="assets/img/skills/madhubani.svg" alt="" width="400" height="300" loading="lazy" decoding="async"></div>
+    <div class="body"><span class="tag">Arts &amp; Painting</span><span class="tag">East</span>
+    <h3>Madhubani painting</h3><p>Bright paintings full of fish, birds, flowers and gods, filled edge to edge with fine lines.</p></div></a></li>
   <li data-skill-card data-category="arts" data-zone="west"><a class="skill-card" href="skill.html?id=warli">
-    <span class="thumb"><img src="assets/img/skills/warli.svg" alt="" width="400" height="300" loading="lazy" decoding="async"></span>
-    <span class="body"><span class="tag">Arts &amp; Painting</span><span class="tag">West</span>
-    <h3>Warli painting</h3><p>Simple white figures made of circles, triangles and lines that show village life, dancing and farming.</p></span></a></li>
+    <div class="thumb"><img src="assets/img/skills/warli.svg" alt="" width="400" height="300" loading="lazy" decoding="async"></div>
+    <div class="body"><span class="tag">Arts &amp; Painting</span><span class="tag">West</span>
+    <h3>Warli painting</h3><p>Simple white figures made of circles, triangles and lines that show village life, dancing and farming.</p></div></a></li>
   <li data-skill-card data-category="crafts" data-zone="north"><a class="skill-card" href="skill.html?id=blue-pottery">
-    <span class="thumb"><img src="assets/img/skills/blue-pottery.svg" alt="" width="400" height="300" loading="lazy" decoding="async"></span>
-    <span class="body"><span class="tag">Pottery &amp; Crafts</span><span class="tag">North</span>
-    <h3>Jaipur blue pottery</h3><p>Shiny pots and tiles painted in cobalt blue and turquoise, with flowers and birds.</p></span></a></li>
+    <div class="thumb"><img src="assets/img/skills/blue-pottery.svg" alt="" width="400" height="300" loading="lazy" decoding="async"></div>
+    <div class="body"><span class="tag">Pottery &amp; Crafts</span><span class="tag">North</span>
+    <h3>Jaipur blue pottery</h3><p>Shiny pots and tiles painted in cobalt blue and turquoise, with flowers and birds.</p></div></a></li>
   <li data-skill-card data-category="crafts" data-zone="east"><a class="skill-card" href="skill.html?id=terracotta">
-    <span class="thumb"><img src="assets/img/skills/terracotta.svg" alt="" width="400" height="300" loading="lazy" decoding="async"></span>
-    <span class="body"><span class="tag">Pottery &amp; Crafts</span><span class="tag">East</span>
-    <h3>Terracotta pottery</h3><p>Red-brown clay shaped by hand or on a wheel, then baked to make pots, lamps and animal figures.</p></span></a></li>
+    <div class="thumb"><img src="assets/img/skills/terracotta.svg" alt="" width="400" height="300" loading="lazy" decoding="async"></div>
+    <div class="body"><span class="tag">Pottery &amp; Crafts</span><span class="tag">East</span>
+    <h3>Terracotta pottery</h3><p>Red-brown clay shaped by hand or on a wheel, then baked to make pots, lamps and animal figures.</p></div></a></li>
   <li data-skill-card data-category="crafts" data-zone="central"><a class="skill-card" href="skill.html?id=dhokra">
-    <span class="thumb"><img src="assets/img/skills/dhokra.svg" alt="" width="400" height="300" loading="lazy" decoding="async"></span>
-    <span class="body"><span class="tag">Pottery &amp; Crafts</span><span class="tag">Central</span>
-    <h3>Dhokra metal casting</h3><p>Small metal figures of animals and people, made using wax and clay in a very old method.</p></span></a></li>
+    <div class="thumb"><img src="assets/img/skills/dhokra.svg" alt="" width="400" height="300" loading="lazy" decoding="async"></div>
+    <div class="body"><span class="tag">Pottery &amp; Crafts</span><span class="tag">Central</span>
+    <h3>Dhokra metal casting</h3><p>Small metal figures of animals and people, made using wax and clay in a very old method.</p></div></a></li>
   <li data-skill-card data-category="textiles" data-zone="north"><a class="skill-card" href="skill.html?id=bagru">
-    <span class="thumb"><img src="assets/img/skills/bagru.svg" alt="" width="400" height="300" loading="lazy" decoding="async"></span>
-    <span class="body"><span class="tag">Textiles &amp; Weaving</span><span class="tag">North</span>
-    <h3>Bagru block printing</h3><p>Patterns printed on cloth by hand using carved wooden blocks and natural dyes.</p></span></a></li>
+    <div class="thumb"><img src="assets/img/skills/bagru.svg" alt="" width="400" height="300" loading="lazy" decoding="async"></div>
+    <div class="body"><span class="tag">Textiles &amp; Weaving</span><span class="tag">North</span>
+    <h3>Bagru block printing</h3><p>Patterns printed on cloth by hand using carved wooden blocks and natural dyes.</p></div></a></li>
   <li data-skill-card data-category="textiles" data-zone="south"><a class="skill-card" href="skill.html?id=kalamkari">
-    <span class="thumb"><img src="assets/img/skills/kalamkari.svg" alt="" width="400" height="300" loading="lazy" decoding="async"></span>
-    <span class="body"><span class="tag">Textiles &amp; Weaving</span><span class="tag">South</span>
-    <h3>Kalamkari</h3><p>Cloth painted or block-printed with plant dyes, showing trees, flowers and stories.</p></span></a></li>
+    <div class="thumb"><img src="assets/img/skills/kalamkari.svg" alt="" width="400" height="300" loading="lazy" decoding="async"></div>
+    <div class="body"><span class="tag">Textiles &amp; Weaving</span><span class="tag">South</span>
+    <h3>Kalamkari</h3><p>Cloth painted or block-printed with plant dyes, showing trees, flowers and stories.</p></div></a></li>
   <li data-skill-card data-category="textiles" data-zone="south"><a class="skill-card" href="skill.html?id=kanjeevaram">
-    <span class="thumb"><img src="assets/img/skills/kanjeevaram.svg" alt="" width="400" height="300" loading="lazy" decoding="async"></span>
-    <span class="body"><span class="tag">Textiles &amp; Weaving</span><span class="tag">South</span>
-    <h3>Kanjeevaram silk weaving</h3><p>Heavy silk sarees woven on handlooms, with wide borders and gold thread.</p></span></a></li>
+    <div class="thumb"><img src="assets/img/skills/kanjeevaram.svg" alt="" width="400" height="300" loading="lazy" decoding="async"></div>
+    <div class="body"><span class="tag">Textiles &amp; Weaving</span><span class="tag">South</span>
+    <h3>Kanjeevaram silk weaving</h3><p>Heavy silk sarees woven on handlooms, with wide borders and gold thread.</p></div></a></li>
   <li data-skill-card data-category="textiles" data-zone="east"><a class="skill-card" href="skill.html?id=ikat">
-    <span class="thumb"><img src="assets/img/skills/ikat.svg" alt="" width="400" height="300" loading="lazy" decoding="async"></span>
-    <span class="body"><span class="tag">Textiles &amp; Weaving</span><span class="tag">East</span>
-    <h3>Ikat weaving</h3><p>Threads are tie-dyed before weaving, so the pattern appears as the cloth is made.</p></span></a></li>
+    <div class="thumb"><img src="assets/img/skills/ikat.svg" alt="" width="400" height="300" loading="lazy" decoding="async"></div>
+    <div class="body"><span class="tag">Textiles &amp; Weaving</span><span class="tag">East</span>
+    <h3>Ikat weaving</h3><p>Threads are tie-dyed before weaving, so the pattern appears as the cloth is made.</p></div></a></li>
   <li data-skill-card data-category="music" data-zone="north"><a class="skill-card" href="skill.html?id=sitar-tabla">
-    <span class="thumb"><img src="assets/img/skills/sitar-tabla.svg" alt="" width="400" height="300" loading="lazy" decoding="async"></span>
-    <span class="body"><span class="tag">Traditional Music</span><span class="tag">North</span>
-    <h3>Sitar &amp; tabla</h3><p>The sitar's ringing strings and the tabla's talking drums are at the heart of Hindustani music.</p></span></a></li>
+    <div class="thumb"><img src="assets/img/skills/sitar-tabla.svg" alt="" width="400" height="300" loading="lazy" decoding="async"></div>
+    <div class="body"><span class="tag">Traditional Music</span><span class="tag">North</span>
+    <h3>Sitar &amp; tabla</h3><p>The sitar's ringing strings and the tabla's talking drums are at the heart of Hindustani music.</p></div></a></li>
   <li data-skill-card data-category="music" data-zone="south"><a class="skill-card" href="skill.html?id=carnatic-veena">
-    <span class="thumb"><img src="assets/img/skills/carnatic-veena.svg" alt="" width="400" height="300" loading="lazy" decoding="async"></span>
-    <span class="body"><span class="tag">Traditional Music</span><span class="tag">South</span>
-    <h3>Carnatic veena</h3><p>A large stringed instrument with a deep, warm sound, played in Carnatic music.</p></span></a></li>
+    <div class="thumb"><img src="assets/img/skills/carnatic-veena.svg" alt="" width="400" height="300" loading="lazy" decoding="async"></div>
+    <div class="body"><span class="tag">Traditional Music</span><span class="tag">South</span>
+    <h3>Carnatic veena</h3><p>A large stringed instrument with a deep, warm sound, played in Carnatic music.</p></div></a></li>
   <li data-skill-card data-category="dance" data-zone="north"><a class="skill-card" href="skill.html?id=kathak">
-    <span class="thumb"><img src="assets/img/skills/kathak.svg" alt="" width="400" height="300" loading="lazy" decoding="async"></span>
-    <span class="body"><span class="tag">Dance</span><span class="tag">North</span>
-    <h3>Kathak</h3><p>A storytelling dance with fast spins, rhythmic footwork and ankle bells.</p></span></a></li>
+    <div class="thumb"><img src="assets/img/skills/kathak.svg" alt="" width="400" height="300" loading="lazy" decoding="async"></div>
+    <div class="body"><span class="tag">Dance</span><span class="tag">North</span>
+    <h3>Kathak</h3><p>A storytelling dance with fast spins, rhythmic footwork and ankle bells.</p></div></a></li>
   <li data-skill-card data-category="dance" data-zone="south"><a class="skill-card" href="skill.html?id=bharatanatyam">
-    <span class="thumb"><img src="assets/img/skills/bharatanatyam.svg" alt="" width="400" height="300" loading="lazy" decoding="async"></span>
-    <span class="body"><span class="tag">Dance</span><span class="tag">South</span>
-    <h3>Bharatanatyam</h3><p>A classical dance from Tamil Nadu with strong poses, clear footwork and expressive hands.</p></span></a></li>
+    <div class="thumb"><img src="assets/img/skills/bharatanatyam.svg" alt="" width="400" height="300" loading="lazy" decoding="async"></div>
+    <div class="body"><span class="tag">Dance</span><span class="tag">South</span>
+    <h3>Bharatanatyam</h3><p>A classical dance from Tamil Nadu with strong poses, clear footwork and expressive hands.</p></div></a></li>
   <li data-skill-card data-category="food" data-zone="south"><a class="skill-card" href="skill.html?id=pongal">
-    <span class="thumb"><img src="assets/img/skills/pongal.svg" alt="" width="400" height="300" loading="lazy" decoding="async"></span>
-    <span class="body"><span class="tag">Traditional Food</span><span class="tag">South</span>
-    <h3>Pongal (harvest dish)</h3><p>A dish of rice and lentils cooked during the Pongal harvest festival, sweet or savoury.</p></span></a></li>
+    <div class="thumb"><img src="assets/img/skills/pongal.svg" alt="" width="400" height="300" loading="lazy" decoding="async"></div>
+    <div class="body"><span class="tag">Traditional Food</span><span class="tag">South</span>
+    <h3>Pongal (harvest dish)</h3><p>A dish of rice and lentils cooked during the Pongal harvest festival, sweet or savoury.</p></div></a></li>
   <li data-skill-card data-category="food" data-zone="north"><a class="skill-card" href="skill.html?id=makki-saag">
-    <span class="thumb"><img src="assets/img/skills/makki-saag.svg" alt="" width="400" height="300" loading="lazy" decoding="async"></span>
-    <span class="body"><span class="tag">Traditional Food</span><span class="tag">North</span>
-    <h3>Makki di roti &amp; sarson da saag</h3><p>Corn flatbread with slow-cooked mustard greens, a winter favourite in Punjab.</p></span></a></li>
+    <div class="thumb"><img src="assets/img/skills/makki-saag.svg" alt="" width="400" height="300" loading="lazy" decoding="async"></div>
+    <div class="body"><span class="tag">Traditional Food</span><span class="tag">North</span>
+    <h3>Makki di roti &amp; sarson da saag</h3><p>Corn flatbread with slow-cooked mustard greens, a winter favourite in Punjab.</p></div></a></li>
 </ul>
 <!-- /@skills-grid -->
     </div>

@@ -19,6 +19,6 @@ function apply() {
   status.textContent = shown ? `Showing ${shown} tradition${shown === 1 ? '' : 's'}.` : 'No traditions match both filters yet. Try another region or "All".';
 }
 form.addEventListener('change', apply);
-form.addEventListener('submit', e => e.preventDefault());
+
 document.getElementById('filter-reset')?.addEventListener('click', () => { setFrom('category', 'all'); setFrom('zone', 'all'); apply(); });
 apply();
