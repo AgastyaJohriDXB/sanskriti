@@ -1,0 +1,30 @@
+{
+  "note": "Curated places only. Each entry was checked on the date shown. Opening times and programmes change: always check the official website or call first.",
+  "places": [
+    {"id":"crafts-museum-delhi","name":"National Crafts Museum & Hastkala Academy","city":"New Delhi","type":"museum",
+     "skills":["terracotta","dhokra","blue-pottery","bagru","kalamkari","kanjeevaram","ikat","madhubani","warli"],"categories":["crafts","textiles","arts"],
+     "description":"A large museum of Indian crafts and handlooms run under the Ministry of Textiles. It runs a Craft Demonstration Programme where invited artisans show their work.",
+     "url":"https://nationalcraftsmuseum.nic.in/",
+     "verified":{"date":"2026-11-24","source":"Museum's official site (nationalcraftsmuseum.nic.in) event pages, found by web search"}},
+    {"id":"anokhi-museum-jaipur","name":"Anokhi Museum of Hand Printing","city":"Jaipur","type":"museum",
+     "skills":["bagru"],"categories":["textiles"],
+     "description":"A museum of hand block printing in a restored haveli near Amber. Visitors can watch block carving and printing, and try printing themselves.",
+     "url":"https://www.anokhi.com/museum",
+     "verified":{"date":"2026-11-24","source":"Museums of India listing and other directories, found by web search. TODO-VERIFY: confirm official URL and timings"}},
+    {"id":"kalakshetra-chennai","name":"Kalakshetra Foundation","city":"Chennai","type":"class",
+     "skills":["bharatanatyam","carnatic-veena"],"categories":["dance","music"],
+     "description":"A famous school of dance and music in Thiruvanmiyur, founded in 1936 by Rukmini Devi Arundale. It offers courses and holds performances.",
+     "url":"https://www.kalakshetra.in/",
+     "verified":{"date":"2026-11-24","source":"Government of India portal (india.gov.in) listing of the official website, found by web search"}},
+    {"id":"dakshinachitra-chennai","name":"DakshinaChitra Heritage Museum","city":"Chennai","type":"workshop",
+     "skills":["terracotta","kanjeevaram","kalamkari","pongal"],"categories":["crafts","textiles","food"],
+     "description":"A living-history museum of South Indian homes and crafts on the East Coast Road, south of Chennai, run by the Madras Craft Foundation. It hosts craft workshops.",
+     "url":"https://www.dakshinachitra.net/",
+     "verified":{"date":"2026-11-24","source":"Incredible India (incredibleindia.gov.in) and Museums of India listings, found by web search. TODO-VERIFY: confirm official URL"}},
+    {"id":"cci-chennai","name":"Crafts Council of India – Kamala crafts shop","city":"Chennai","type":"cooperative",
+     "skills":["kanjeevaram","kalamkari","ikat","bagru","blue-pottery","terracotta","dhokra"],"categories":["crafts","textiles"],
+     "description":"The Crafts Council of India supports artisans and holds craft bazaars. Its Kamala shop in Egmore sells handmade work directly linked to craftspeople.",
+     "url":"https://craftscouncilofindia.in/",
+     "verified":{"date":"2026-11-24","source":"Crafts Council of India official site (craftscouncilofindia.in), found by web search"}}
+  ]
+}
