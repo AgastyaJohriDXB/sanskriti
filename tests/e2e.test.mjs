@@ -5,10 +5,10 @@ import { createRequire } from 'node:module';
 import { serve } from '../tools/serve.mjs';
 const require = createRequire(import.meta.url);
 const { chromium } = require('playwright');
-const B = 'http://127.0.0.1:4173/sanskriti/';
+const B = 'http://127.0.0.1:4174/sanskriti/';
 const PAGES = ['index.html', 'issue.html', 'impact.html', 'solutions.html', 'skills.html', 'skill.html?id=madhubani', 'quiz.html', 'experiences.html', 'surprise.html', 'about.html', '404.html'];
 let server, browser;
-before(async () => { server = await serve(4173); browser = await chromium.launch(); });
+before(async () => { server = await serve(4174); browser = await chromium.launch(); });
 after(async () => { await browser.close(); server.close(); });
 
 async function page(opts = {}) {
