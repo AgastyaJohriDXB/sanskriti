@@ -27,3 +27,17 @@ jobs:
           path: _site
       - id: deployment
         uses: actions/deploy-pages@v4
+  verify:
+    needs: deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check every page and asset on the live site returns 200
+        run: |
+          sleep 20
+          B=https://agastyajohridxb.github.io/sanskriti/
+          fail=0
+          for p in "" index.html issue.html impact.html solutions.html skills.html "skill.html?id=kathak" quiz.html experiences.html surprise.html about.html data/skills.json data/quiz.json data/experiences.json assets/css/site.css assets/js/main.js assets/js/quiz.js assets/js/experiences.js assets/fonts/inter-latin-400-normal.woff2 assets/img/skills/madhubani.svg assets/img/share.png assets/icons/favicon.svg manifest.webmanifest robots.txt sitemap.xml; do
+            code=$(curl -s -o /dev/null -w '%{http_code}' "$B$p"); echo "$code $B$p"; [ "$code" = 200 ] || fail=1
+          done
+          code=$(curl -s -o /dev/null -w '%{http_code}' "${B}does-not-exist"); echo "$code (expected 404) missing page"
+          exit $fail
