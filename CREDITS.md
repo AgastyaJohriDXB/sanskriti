@@ -1,6 +1,6 @@
 # Credits
 
-Every file in `assets/img` and `assets/icons` is listed here. No photographs or third-party images are used.
+Every file in `assets/img` and `assets/icons` is listed here. The only photograph is the creator's photo on About Me.
 
 ## Images
 
@@ -21,6 +21,7 @@ Every file in `assets/img` and `assets/icons` is listed here. No photographs or 
 | assets/img/skills/bharatanatyam.svg | Bharatanatyam dancer | Original illustration for Sanskriti | CC BY 4.0 |
 | assets/img/skills/pongal.svg | Pongal pot with sugarcane | Original illustration for Sanskriti | CC BY 4.0 |
 | assets/img/skills/makki-saag.svg | Makki roti and saag | Original illustration for Sanskriti | CC BY 4.0 |
+| assets/img/about/agastya-{320,480,640}.{webp,jpg} | Photo of Agastya, the creator | Family photo, supplied by the family | All rights reserved – used with permission, not covered by CC BY |
 | assets/img/share.png | Social share card (1200×630) | Rendered from the above by `tools/make-icons.mjs` | CC BY 4.0 |
 | assets/icons/favicon.svg, favicon-32.png, apple-touch-icon.png, icon-192.png, icon-512.png | Arch-and-lotus logo mark | Original for Sanskriti | CC BY 4.0 |
 | Inline SVG band art (jharokha, gateway, loom, journal) in the HTML | Decorative line art | Original for Sanskriti | CC BY 4.0 |

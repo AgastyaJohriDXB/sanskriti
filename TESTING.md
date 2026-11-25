@@ -70,7 +70,7 @@ Manual review checklist (student/teacher):
 |---|---|
 | Every page read through for age-appropriate, respectful language | |
 | Every external link opened and checked to be the official organisation | |
-| No personal data (surname, school, city, photo, contact) anywhere | ✅ checked by build (only "Agastya" appears) |
+| No personal data (surname, school, contact) anywhere | ✅ only the first name "Agastya" and a family-approved photo (metadata stripped) |
 | No forms send data, no cookies, no analytics | ✅ verified by e2e network test |
 | Safety note present on Find Experiences | ✅ |
 

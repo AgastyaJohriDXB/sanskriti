@@ -22,9 +22,11 @@ Decisions, problems and open items while building Sanskriti. Newest last.
 16. **"Where it happens" map.** No licensed map was available offline, so the page shows a "Map coming soon" placeholder and a list of craft clusters.
 17. **Dindigul lock-making** has no dedicated skill page or illustration yet. The Impact card uses the metal-craft illustration and says so in its caption.
 
-## Deployment status (needs the student/teacher)
+18. **Creator photo added (2026-11-25), at the family's request.** The original spec said no photo of the student. The family later asked for one to be added to About Me. The photo was cropped, saved as WebP with a JPEG fallback in 3 widths (13–60 KB each) and stripped of all metadata, including any GPS location. It is lazy-loaded below the fold. Still no surname, school, contact details or social links. Note: the photo's background shows a recognisable city skyline. A crop or a different photo is an option if that is a concern.
 
-The build container's GitHub CLI token was **invalid**, so the GitHub repository could not be created, Pages enabled or the release tagged from here. Everything is committed locally with a full stage-by-stage history. Run the commands in README.md → "First deployment" to publish it, then set `siteUrl` and rebuild.
+## Deployment status
+
+Live at https://agastyajohridxb.github.io/sanskriti/ and deployed by `.github/workflows/pages.yml` (Pages source: GitHub Actions). A verify job checks that every page and asset returns 200 after each deploy. The v1.0.0 release must be created in the GitHub web UI.
 
 ## TODO-VERIFY
 
