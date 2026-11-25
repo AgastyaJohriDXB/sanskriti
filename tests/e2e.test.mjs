@@ -11,14 +11,17 @@ let server, browser;
 before(async () => { server = await serve(4174); browser = await chromium.launch(); });
 after(async () => { await browser.close(); server.close(); });
 
+// 404.html carries <base href="siteUrl"> so it works on any missing URL of the live site.
+// Locally that points at the live origin, so ignore requests/errors for that origin only.
+const LIVE = 'agastyajohridxb.github.io';
 async function page(opts = {}) {
   const ctx = await browser.newContext(opts);
   const p = await ctx.newPage();
   p.errors = [];
   p.external = [];
   p.on('pageerror', e => p.errors.push(e.message));
-  p.on('console', m => m.type() === 'error' && p.errors.push(m.text()));
-  p.on('request', r => { if (!r.url().startsWith('http://127.0.0.1')) p.external.push(r.url()); });
+  p.on('console', m => m.type() === 'error' && !m.text().includes(LIVE) && p.errors.push(m.text()));
+  p.on('request', r => { if (!r.url().startsWith('http://127.0.0.1') && !r.url().includes(LIVE)) p.external.push(r.url()); });
   return p;
 }
 
