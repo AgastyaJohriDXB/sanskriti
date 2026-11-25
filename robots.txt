@@ -1,2 +1,3 @@
 User-agent: *
 Allow: /
+Sitemap: https://agastyajohridxb.github.io/sanskriti/sitemap.xml

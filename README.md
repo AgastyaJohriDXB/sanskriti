@@ -4,7 +4,7 @@ A friendly website that helps young people (ages 8–18) **discover, learn, find
 
 An MYP 4 Digital Design, Service as Action project by Agastya.
 
-**Live site:** _not published yet. See "First deployment" below, then put the URL here._
+**Live site:** https://agastyajohridxb.github.io/sanskriti/
 
 ## What's inside
 
